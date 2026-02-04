@@ -9,13 +9,21 @@ class Model(IModel):
     def __init__(self):
         self._magic_number = random.randint(1, 100)
         self._proposal_count = 0
-        n = int(input("Nombre de tentatives : "))
+        while True:
+            try:
+                n = int(input("Nombre de tentatives : "))
 
-        if n > 30:
-            print("Va te faire voir !", n, "Tentatives ?! C'est beaucoup trop !" , "Maintenant tu seras puni !!!" )
-            n = 5
-            print("Testicular Torsion", n, "tentatives !")
-        self._max_proposals = n
+                if n > 30:
+                    print(f"Va te faire voir ! {n} Tentatives ?! C'est beaucoup trop ! Maintenant tu seras puni !!!")
+                    n = 5
+                    print(f"Testicular Torsion ! {n} tentatives !")
+
+                self._max_proposals = n
+                break
+
+            except ValueError:
+                # Si l'utilisateur tape "abc" ou "12.4", on tombe ici
+                print("Apprends à taper un nombre entier, abruti !")
 
     def compareToMagicNumber(self, num: int) -> str:
         self._proposal_count += 1

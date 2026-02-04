@@ -22,7 +22,6 @@ class Model(IModel):
                 break
 
             except ValueError:
-                # Si l'utilisateur tape "abc" ou "12.4", on tombe ici
                 print("Apprends à taper un nombre entier, abruti !")
 
     def compareToMagicNumber(self, num: int) -> str:

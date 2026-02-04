@@ -2,13 +2,21 @@
 
 # Made with ❤️ by [JAD](mailto:jeanaymeric@gmail.com)
 
+## Binôme
+
+- Nom Prénom - pseudo github
+- Nom Prénom - pseudo github
+
 ## Sujet
+
 Voici les diagrammes d’un programme de nombre magique avec une architecture MVC.
 
-Le programme du nombre magique est un programme qui choisit un nombre aléatoirement entre 0 et 100, et demande à l’utilisateur de le trouve. A chaque proposition le programme répond soit :
--	Trouvé
--	Trop grand
--	Trop petit
+Le programme du nombre magique est un programme qui choisit un nombre aléatoirement entre 0 et 100, et demande à
+l’utilisateur de le trouve. A chaque proposition le programme répond soit :
+
+- Trouvé
+- Trop grand
+- Trop petit
 
 L’utilisateur n’a le droit qu’à 10 propositions.
 
@@ -44,6 +52,7 @@ Trouvé
 ![alt text](ressources/CD-MagicNumber.png)
 
 ## Consignes
+
 Complétez les fichiers `model.py`, `controller.py` et `view.py`.
 
 Inutile de modifier les autres fichiers

@@ -7,13 +7,28 @@ class Model(IModel):
     # To be completed
 
     def __init__(self):
-        pass
+        self._magic_number = random.randint(1, 100)
+        self._proposal_count = 0
+        n = int(input("Nombre de tentatives : "))
 
-    def compareToMagicNumber(self, num: int) -> int:
-        pass
+        if n > 30:
+            print("Va te faire voir !", n, "Tentatives ?! C'est beaucoup trop !" , "Maintenant tu seras puni !!!" )
+            n = 5
+            print("Testicular Torsion", n, "tentatives !")
+        self._max_proposals = n
+
+    def compareToMagicNumber(self, num: int) -> str:
+        self._proposal_count += 1
+        if num < self._magic_number:
+            return "Vise plus haut !"
+        elif num > self._magic_number:
+            return "Vise plus Bas !"
+        else:
+            return "Parfait !"
 
     def getProposalCount(self) -> int:
-        pass
+        return self._proposal_count
 
     def getMaxNumberOfProposals(self) -> int:
-        pass
+        return self._max_proposals
+

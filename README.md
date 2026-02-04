@@ -4,8 +4,11 @@
 
 ## Binôme
 
-- Nom Prénom - pseudo github
-- Nom Prénom - pseudo github
+-Eline FERREIRA - eli7-junia
+
+-Miguel DE SOUSA ALGARVE - Bluewarp76
+
+-Paul BRUNET - PaulBrn-ai
 
 ## Sujet
 
